@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaveiro Felipe - Atendimento 24h</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1500');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+        }
+        .service-card { transition: transform 0.3s; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .service-card:hover { transform: translateY(-10px); }
+        .navbar-brand { font-weight: bold; color: #ffc107 !important; }
+        .btn-whatsapp { background-color: #25d366; color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CHAVEIRO FELIPE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Chaveiro Felipe</h1>
+            <p class="lead mb-4">Serviços rápidos, precisos e com confiança. Atendimento em toda a região.</p>
+            <a href="https://wa.me/SEU_NUMERO_AQUI" class="btn btn-whatsapp btn-lg"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Serviços</h2>
+            <div class="row g-4">
+                <!-- Serviço 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card p-4 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-key fa-3x mb-3 text-warning"></i>
+                            <h5 class="card-title">Aberturas de Portas</h5>
+                            <p class="card-text">Residencial e Comercial. Atendimento ágil para quando você mais precisa.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card p-4 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-car fa-3x mb-3 text-warning"></i>
+                            <h5 class="card-title">Chaves Automotivas</h5>
+                            <p class="card-text">Cópia de chaves codificadas, abertura de veículos e consertos em geral.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 service-card p-4 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-lock fa-3x mb-3 text-warning"></i>
+                            <h5 class="card-title">Instalação de Fechaduras</h5>
+                            <p class="card-text">Troca de segredos, instalação de fechaduras eletrônicas e travas de segurança.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato/Localização -->
+    <section id="contato" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Entre em Contato</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <p class="fs-5">Estamos prontos para te atender a qualquer hora!</p>
+                    <p><i class="fas fa-phone"></i> (XX) XXXXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> contato@chaveirofelipe.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sua Cidade - Estado</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="bg-dark text-white p-4 rounded shadow">
+                        <h4>Horário de Atendimento</h4>
+                        <p class="mb-0 text-warning fw-bold">24 HORAS POR DIA</p>
+                        <p>Segunda a Domingo, inclusive feriados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Chaveiro Felipe - Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
